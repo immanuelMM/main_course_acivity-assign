@@ -17,7 +17,7 @@
   #main{
     background:#eee;
     margin:auto;
-    border-radius:5rem;
+    border-radius:1rem;
     padding:auto;
     width:100%;
   }
@@ -28,8 +28,8 @@
     line-height:3.5rem;
     text-align:center;
     min-height:8rem;
-    background-color: #dc411ad9
-
+    background-color: #dc411ad9;
+    border-radius: 10px;
   }
   
   #title h1{
@@ -65,7 +65,7 @@
     margin: 0 10rem 0 10rem;
     line-height:2rem;
     margin-bottom:1rem;
-    background-color: blanchedalmond;
+    background-color: #fdf6ea;
     margin: 20px;
     padding: 2rem;
     border-radius: 2rem;
@@ -308,4 +308,13 @@ body {
   .right {
     left: 0%;
   }
+}
+article{
+  background-color: wheat; 
+  margin: 20px; 
+  padding: 2em; 
+  border-radius: 2em;
+}
+footer{
+  background-color:  #d1cecdd9;
 }
