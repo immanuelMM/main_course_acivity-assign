@@ -62,7 +62,6 @@
   
   #img-caption{
     font-size:19px;
-    margin: 0 10rem 0 10rem;
     line-height:2rem;
     margin-bottom:1rem;
     background-color: #fdf6ea;
@@ -88,20 +87,6 @@
     line-height:3rem;
   }
   
-  li{
-    list-style:none;
-    margin-bottom: 1rem;
-  }
-  
-  #p-quote{
-    font-size:24px;
-    color:#999;
-  }
-  
-  #quote{
-    font-size:20px;
-    color:#bbb;
-  }
   /* end of tribute-info */
   
   /* start of p-link  */
@@ -149,20 +134,6 @@
   
     #info-header{
       line-height:2rem;
-    }
-  
-    #timeline{
-        position: relative;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-  
-    #p-quote{
-      font-size:22px;
-    }
-    
-    #quote{
-      font-size:18.4px;
     }
   
     #p-link{
