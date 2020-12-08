@@ -16,11 +16,15 @@
   
   
   .white-box{
-    background-color: white;
+    background-color: #eeeed2;
     flex: 1;
   }
   
   .black-box{
-    background-color: black;
+    background-color: #85aa53;
     flex: 1;
   }
+ body {
+    background-color: #312e2b;
+    color: aliceblue;
+ }
