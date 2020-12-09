@@ -35,6 +35,7 @@
   flex-direction: row;
 }
 .item{
+  flex-grow: inherit;
   font-size: 2rem;
   line-height: 1;
   text-align: center;
