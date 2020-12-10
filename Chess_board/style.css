@@ -18,11 +18,15 @@
   .white-box{
     background-color: #eeeed2;
     flex: 1;
+    font-size: 4vw;
+    text-align: center;
   }
   
   .black-box{
     background-color: #85aa53;
     flex: 1;
+    font-size: 4vw;
+    text-align: center;
   }
 
   div:hover {
