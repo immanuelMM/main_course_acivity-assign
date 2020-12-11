@@ -37,12 +37,22 @@
     .player {
       background-color: gainsboro;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr  ;
+      grid-template-columns: 1fr 1fr 1fr 1fr  ;
       font-size: 2vw;
       width: 45vw;
     }
+    .image {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .player-time {
+      text-align: center;
+      grid-column-start: 3;
+      grid-column-end: 5;
+      margin-top: 60px;
+    }
     img {
-      height: 2vw;
+      height: 3vw;
       padding: 1vw;
     }
     @media(max-width:700px){
@@ -64,19 +74,25 @@
       font-size: 4vw;
       width: 100vw;
       justify-items: start;
+      
     }
     img {
       height: 6vw;
       padding: 1vw;
+    }
+    .player-time {
+      text-align: center;
+      grid-column-start: 3;
+      grid-column-end: 5;
+      margin-top: 10px;
     }
 }
   </style>
 </head>
 <body>
   <div class="player">
-    <div class="img"><img src="avatar.jpg" alt="" srcset=""></div>
-    <div class="player-name">immanuel 1069</div>
-    <div class ="player-time"> Time :  &nbsp; 30:00</div>
+    <div class="image"><img src="avatar.jpg" alt="" srcset="">immanuel 1069</div>
+    <div class ="player-time">time: &nbsp; 30:00</div>
     <div>&#9823;</div>
   </div>
   <div class="contaier">
@@ -155,10 +171,9 @@
     </div>
   </div>
   <div class="player">
-    <div class="img"><img src="avatar.jpg" alt="" srcset=""></div>
-    <div class="player-name">immanuel 1069</div>
-    <div player-time> Time :  &nbsp;  30:00</div>
-    <div>&#9817;</div>
+    <div class="image"><img src="avatar.jpg" alt="" srcset="">immanuel 1069</div>
+    <div class ="player-time">time: &nbsp; 30:00</div>
+    <div>&#9823;</div>
   </div>
 </body>
 </html>
