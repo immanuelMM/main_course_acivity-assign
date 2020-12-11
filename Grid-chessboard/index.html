@@ -20,7 +20,10 @@
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       width: 45vw;
       height: 45vw;    
-    }  
+    } 
+    /* div:hover {
+      background-color: #bacb2b;
+    }  */
     .item {
      font-size: 3vw; 
      text-align: center;
@@ -32,12 +35,11 @@
       background-color: #85aa53;
     }
     .player {
-      margin-top: 1vw;
-      padding: 3vw;
-      font-size: 2vw;
-      text-align: center;
-      justify-items: center;
-      color: blanchedalmond;
+      background-color: gainsboro;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      font-size: 3vw;
+      width: 45vw;
     }
     img {
       height: 10vw;
@@ -46,56 +48,68 @@
     @media(max-width:700px){
     body{
       line-height:25px;
-      font-size:18vw;
     }
     .chessboard {
       width: 100vw;
       height: 100vw;    
     }
-   
+    .item {
+     font-size: 10vw; 
+     justify-items: flex-end;
+    }
+   .container {
+     display: flex;
+   }
+   .player {
+      font-size: 4vw;
+      width: 100vw;
+      padding: 1vw;
+      justify-items: center;
+    }
 }
   </style>
 </head>
 <body>
+  <div class="player">
+    &#9823;
+    <div class="img"><img src="avatar.jpg" alt="" srcset=""></div>
+    <div class="player-name">immanuel 1069</div>
+    <div class ="player-time">30:00</div>
+  </div>
   <div class="contaier">
-    <div class="player">
-      <div class="img"><img src="avatar.jpg" alt="" srcset=""></div>
-      <div class="player-name">immanuel 1069</div>
-      <div class ="player-time">30:00</div>
-    </div>
     <div class="chessboard">
-      <div class="item box-white">&#9814;</div>
+      <div class="item box-white rook">&#9814;</div>
+      <div class="item box-black horse">&#9816;</div>
+      <div class="item box-white bishop">&#9815;</div>
+      <div class="item box-black queen"></div>
+      <div class="item box-white king">&#9812;</div>
+      <div class="item box-black bishop">&#9815;</div>
+      <div class="item box-white horse"></div>
+      <div class="item box-black rook">&#9814;</div>
+
+      <div class="item box-black">&#9817;</div>
+      <div class="item box-white">&#9817;</div>
+      <div class="item box-black">&#9817;</div>
+      <div class="item box-white"></div>
+      <div class="item box-black"></div>
+      <div class="item box-white">&#9817;</div>
+      <div class="item box-black">&#9817;</div>
+      <div class="item box-white">&#9817;</div>
+
+      <div class="item box-white"></div>
+      <div class="item box-black"></div>
+      <div class="item box-white"></div>
+      <div class="item box-black"></div>
+      <div class="item box-white"></div>
       <div class="item box-black">&#9816;</div>
-      <div class="item box-white">&#9815;</div>
-      <div class="item box-black">&#9813;</div>
+      <div class="item box-white"></div>
+      <div class="item box-black"></div>
+
+      <div class="item box-black"></div>
+      <div class="item box-white"></div>
+      <div class="item box-black"></div>
       <div class="item box-white">&#9813;</div>
-      <div class="item box-black">&#9815;</div>
-      <div class="item box-white">&#9816;</div>
-      <div class="item box-black">&#9814;</div>
-
       <div class="item box-black">&#9817;</div>
-      <div class="item box-white">&#9817;</div>
-      <div class="item box-black">&#9817;</div>
-      <div class="item box-white">&#9817;</div>
-      <div class="item box-black">&#9817;</div>
-      <div class="item box-white">&#9817;</div>
-      <div class="item box-black">&#9817;</div>
-      <div class="item box-white">&#9817;</div>
-
-      <div class="item box-white"></div>
-      <div class="item box-black"></div>
-      <div class="item box-white"></div>
-      <div class="item box-black"></div>
-      <div class="item box-white"></div>
-      <div class="item box-black"></div>
-      <div class="item box-white"></div>
-      <div class="item box-black"></div>
-
-      <div class="item box-black"></div>
-      <div class="item box-white"></div>
-      <div class="item box-black"></div>
-      <div class="item box-white"></div>
-      <div class="item box-black"></div>
       <div class="item box-white"></div>
       <div class="item box-black"></div>
       <div class="item box-white"></div>
@@ -112,7 +126,7 @@
       <div class="item box-black"></div>
       <div class="item box-white"></div>
       <div class="item box-black"></div>
-      <div class="item box-white"></div>
+      <div class="item box-white">&#9823;</div>
       <div class="item box-black"></div>
       <div class="item box-white"></div>
       <div class="item box-black"></div>
@@ -121,8 +135,8 @@
       <div class="item box-white">&#9823;</div>
       <div class="item box-black">&#9823;</div>
       <div class="item box-white">&#9823;</div>
-      <div class="item box-black">&#9823;</div>
-      <div class="item box-white">&#9823;</div>
+      <div class="item box-black"></div>
+      <div class="item box-white"></div>
       <div class="item box-black">&#9823;</div>
       <div class="item box-white">&#9823;</div>
       <div class="item box-black">&#9823;</div>
@@ -136,11 +150,12 @@
       <div class="item box-black">&#9822;</div>
       <div class="item box-white">&#9820;</div>
     </div>
-    <div class="player">
-      <div class="img"><img src="avatar.jpg" alt="" srcset=""></div>
-      <div player-name>immanuel 1069</div>
-      <div player-time>30:00</div>
-    </div>
+  </div>
+  <div class="player">
+    &#9817;
+    <div class="img"><img src="avatar.jpg" alt="" srcset=""></div>
+    <div class="player-name">immanuel 1069</div>
+    <div player-time>30:00</div>
   </div>
 </body>
 </html>
