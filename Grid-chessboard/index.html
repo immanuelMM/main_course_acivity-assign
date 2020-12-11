@@ -37,12 +37,12 @@
     .player {
       background-color: gainsboro;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr ;
-      font-size: 3vw;
+      grid-template-columns: 1fr 1fr 1fr  ;
+      font-size: 2vw;
       width: 45vw;
     }
     img {
-      height: 10vw;
+      height: 2vw;
       padding: 1vw;
     }
     @media(max-width:700px){
@@ -63,7 +63,11 @@
    .player {
       font-size: 4vw;
       width: 100vw;
-      justify-items: center;
+      justify-items: start;
+    }
+    img {
+      height: 6vw;
+      padding: 1vw;
     }
 }
   </style>
@@ -72,7 +76,7 @@
   <div class="player">
     <div class="img"><img src="avatar.jpg" alt="" srcset=""></div>
     <div class="player-name">immanuel 1069</div>
-    <div class ="player-time">30:00</div>
+    <div class ="player-time"> Time :  &nbsp; 30:00</div>
     <div>&#9823;</div>
   </div>
   <div class="contaier">
@@ -153,7 +157,7 @@
   <div class="player">
     <div class="img"><img src="avatar.jpg" alt="" srcset=""></div>
     <div class="player-name">immanuel 1069</div>
-    <div player-time>30:00</div>
+    <div player-time> Time :  &nbsp;  30:00</div>
     <div>&#9817;</div>
   </div>
 </body>
